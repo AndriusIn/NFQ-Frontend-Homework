@@ -1,0 +1,56 @@
+@import "suitcss";
+
+@custom-media --sm-viewport (min-width: 320px) and (max-width: 640px);
+@custom-media --md-viewport (min-width: 640px) and (max-width: 960px);
+@custom-media --lg-viewport (min-width: 960px);
+
+:root {
+  --MessageContainer-margin: 100px;
+  --Message-border-radius: 5px;
+  --Message-margin-bottom: 50px;
+  --Message-padding: 15px;
+}
+
+.MessageContainer {
+  margin: var(--MessageContainer-margin);
+}
+
+.MessageContainer-button {
+  background-color: SlateBlue;
+  color: White;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+
+.Message {
+  border-radius: var(--Message-border-radius);
+  margin-bottom: var(--Message-margin-bottom);
+  padding: var(--Message-padding);
+}
+
+.Message--error {
+  border: 1px solid Red;
+  border-right-width: 40px;
+}
+
+.Message--success {
+  border: 1px solid Green;
+  border-right-width: 40px;
+}
+
+.Message-title {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.Message-text {
+  margin-bottom: 0;
+}
+
+.Message-link {
+  text-decoration: none;
+}

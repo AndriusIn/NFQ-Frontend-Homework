@@ -1,0 +1,19 @@
+{
+    "description": "NFQ Frontend Homework",
+    "homepage": "https://github.com/AndriusIn/NFQ-Frontend-Homework",
+    "authors": [
+        {
+            "name": "Andrius Inčiura",
+            "email": "andrius.inciura@gmail.com"
+        }
+    ],
+    "dependencies": {
+        "suitcss": "^3.0.0"
+    },
+    "devDependencies": {
+        "suitcss-preprocessor": "^4.0.0"
+    },
+    "scripts": {
+        "build": "suitcss index.css build/build.css"
+    }
+}
